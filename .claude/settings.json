@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "node",
+      "args": [".claude/mcp/email-server/index.js"],
+      "env": {
+        "CONFIG_PATH": ".claude/settings.local.json"
+      }
+    }
+  }
+}

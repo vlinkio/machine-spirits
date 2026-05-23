@@ -44,6 +44,8 @@ Herald persists its last-run timestamp at `.claude/skills/herald/.last_run` (ISO
    - Includes 2–4 relevant hashtags.
 7. **Output the post** — save the draft to `social_media/progress_updates/` under the name `update_<YYYY-MM-DD_HH-MM>.md` (e.g. `update_2026-05-23_14-30.md`). Using hour and minute in the filename prevents collisions on multiple runs in the same day.
 
+8. **Email the post** — read `.claude/settings.local.json` and extract `email.to`. Use the `send_email` MCP tool (from the `email` server) with `to: email.to`, `subject: "Herald Update — <YYYY-MM-DD HH:MM>"`, and `body` set to the full contents of the newly written post file.
+
 ## Scheduling
 
 To activate the daily schedule, run:

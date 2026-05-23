@@ -227,6 +227,9 @@ sources.md
 # Herald runtime state
 .claude/skills/herald/.last_run
 
+# MCP server dependencies
+.claude/mcp/email-server/node_modules/
+
 # Content files
 social_media/progress_updates/*
 social_media/takes_on_trends/*

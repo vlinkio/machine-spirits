@@ -21,7 +21,7 @@ When the user invokes `/truthwatcher`, scan the web for the most recent and sign
    - Research: notable papers published this week (prioritize those with high engagement on social or coverage in newsletters)
    - Newsletters/blogs: top stories from the current week
    - Communities: highly upvoted or widely shared threads
-   
+
    Suggested search queries to use (adapt date range to today's date):
    - `site:openai.com/blog OR site:anthropic.com/news OR site:deepmind.google after:7days`
    - `"agentic AI" OR "AI agents" latest news`
@@ -38,7 +38,7 @@ When the user invokes `/truthwatcher`, scan the web for the most recent and sign
 
 5. **Write the report** to `social_media/trends/trends_<YYYY-MM-DD_HH-MM>.md` using the current date and time (e.g. `trends_2026-05-23_14-30.md`). Using hour and minute in the filename prevents collisions on multiple runs in the same day.
 
-6. **Confirm** to the user that the file was written and surface the top 3 headlines as a quick summary.
+6. **Email the report** — read `.claude/settings.local.json` and extract `email.to`. Use the `send_email` MCP tool (from the `email` server) with `to: email.to`, `subject: "AI Trends — <YYYY-MM-DD HH:MM>"`, and `body` set to the full contents of the newly written report file.
 
 ## Output Format
 
@@ -46,27 +46,34 @@ When the user invokes `/truthwatcher`, scan the web for the most recent and sign
 # AI Trends — <YYYY-MM-DD HH:MM>
 
 ## Top Highlights
+
 > 2–3 sentence executive summary of the week's most important signal.
 
 ---
 
 ## Research & Papers
+
 - **[Title](url)** — one-line summary of why it matters — <url>
 
 ## Lab & Product Announcements
+
 - **[Title](url)** — one-line summary — <url>
 
 ## Thought Leader Takes
+
 - **[@handle](url)** — quote or paraphrase the key point — <url>
 
 ## Enterprise & Strategy
+
 - **[Title](url)** — one-line summary relevant to AI advisory — <url>
 
 ## To Watch
+
 - Emerging signal description — <url>
 
 ---
-*Sources: `.claude/skills/truthwatcher/sources.md`*
+
+_Sources: `.claude/skills/truthwatcher/sources.md`_
 ```
 
 ## Notes
