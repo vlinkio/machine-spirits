@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Configuration files
+config.json
+context.md
+tones.md
+
+# Content files
+social_media/progress_updates/*
+social_media/takes_on_trends/*
