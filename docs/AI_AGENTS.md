@@ -1,18 +1,21 @@
-## Skill creation
+## Skill Creation
 
 ### Creator
 
 The Skill `creator` can create new skills.
 
-## Content creation
+## Content Creation and Research
 
 ### Herald
 
 The Skill `herald` reads commits and formulates progress updates for social media.
 
+### Truthwatcher
+
+The Skill `truthwatcher` searches online for AI trends and creates summaries.
+
 ## For future development
 
-1. Gather latest trends & demand from social media, newsletters, and research papers and check their relevance against company context.
 2. Draft engaging personalized outreaches to prospects such as creating polls about what they might need to validate demand.
 3. Coordinate social media posting by preparing topics, tracking, which ones have been discussed when, and scheduling continuous campaigns.
 4. Ideate and draft services to be provided.

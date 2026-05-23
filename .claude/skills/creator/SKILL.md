@@ -23,4 +23,4 @@ When the user invokes `/creator`, your task is to forge a new, fully functional 
    ```
 
 3. **Referencing context:**
-   Company context is never to be included in the SKILL.md files. When creating a skill, instead add to the `SKILL.md` file instructions to reference `.claude/skills/context.md` for company context and `.claude/skills/tones.md` for copany tones for content.
+   Company context is never to be included in the SKILL.md files. When creating a skill, instead add to the `SKILL.md` file instructions to reference `.claude/skills/context.md` for company context and `.claude/skills/tones.md` for company tones for content.
