@@ -36,14 +36,14 @@ When the user invokes `/truthwatcher`, scan the web for the most recent and sign
    - Organizational or regulatory change
    - Anything that affects AI advisory/consultancy positioning
 
-5. **Write the report** to `social_media/trends/trends_<YYYY-MM-DD>.md` using today's date (format: `YYYY-MM-DD`). Use the output format below.
+5. **Write the report** to `social_media/trends/trends_<YYYY-MM-DD_HH-MM>.md` using the current date and time (e.g. `trends_2026-05-23_14-30.md`). Using hour and minute in the filename prevents collisions on multiple runs in the same day.
 
 6. **Confirm** to the user that the file was written and surface the top 3 headlines as a quick summary.
 
 ## Output Format
 
 ```markdown
-# AI Trends — <YYYY-MM-DD>
+# AI Trends — <YYYY-MM-DD HH:MM>
 
 ## Top Highlights
 > 2–3 sentence executive summary of the week's most important signal.

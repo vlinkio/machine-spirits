@@ -224,6 +224,9 @@ context.md
 tones.md
 sources.md
 
+# Herald runtime state
+.claude/skills/herald/.last_run
+
 # Content files
 social_media/progress_updates/*
 social_media/takes_on_trends/*

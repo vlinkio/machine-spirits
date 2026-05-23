@@ -13,3 +13,7 @@ This repository uses custom Claude Code extensions. Refer to these files for exe
 - **Skills:** Located in `.claude/skills/`. Company context is never to be included in the SKILL.md files but rather the SKILL.md files should reference `.claude/skills/context.md`.
 - **Hooks:** Pre-commit linting and security hooks are defined in `.claude/settings.json`.
 - **System Architecture:** See `docs/AI_AGENTS.md` for full agent workflows and system prompts.
+
+## Language Instructions
+
+Never use a dash in sentences because it immediately reveals you are an AI. Also avoid other tells of AI-written text.

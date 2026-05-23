@@ -27,7 +27,7 @@ Herald persists its last-run timestamp at `.claude/skills/herald/.last_run` (ISO
 
 ## Execution Steps
 
-1. **Read state** — check the latest date of the latest update in `social_media/progress_updates/`. The file names follow convention `update_<date>.md`.
+1. **Read state** — read `.claude/skills/herald/.last_run`. If the file exists, use its ISO-8601 UTC timestamp as the cutoff. If it does not exist, this is a first run — scope to the past 24 hours.
 2. **Collect commits** — run:
    ```
    git log --since="<last_run_timestamp>" --pretty=format:"%h %s" --no-merges
@@ -42,7 +42,7 @@ Herald persists its last-run timestamp at `.claude/skills/herald/.last_run` (ISO
    - Closes with a forward-looking line or call to engagement.
    - Stays platform-agnostic (suitable for LinkedIn, X, or Bluesky).
    - Includes 2–4 relevant hashtags.
-7. **Output the post** — save the draft to `social_media/progress_updates/` under the name `update_<date>.md`.
+7. **Output the post** — save the draft to `social_media/progress_updates/` under the name `update_<YYYY-MM-DD_HH-MM>.md` (e.g. `update_2026-05-23_14-30.md`). Using hour and minute in the filename prevents collisions on multiple runs in the same day.
 
 ## Scheduling
 
